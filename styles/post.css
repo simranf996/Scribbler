@@ -1,0 +1,102 @@
+.title{
+  text-align: center;
+  padding: 0px 50px 50px 50px;
+  font-family: sans-serif;
+}
+
+.author-name{
+  float: left;
+  font-family: monospace;
+  font-weight: lighter;
+  padding: 0px 60px 0px 60px;
+
+}
+.edit-button {
+  float:right;
+
+}
+
+.edit-button button{
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 16px 32px 16px 32px;
+  text-decoration: none;
+  margin: 0px 60px 0px 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+
+}
+
+.like-button button{
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 16px 32px 16px 32px;
+  text-decoration: none;
+  margin: 0px 0px 0px 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+}
+
+.like-button p{
+  padding: 16px 0px 16px 0px;
+  margin: 0px 0px 0px 60px;
+}
+.comments input[type=text] {
+  width: 90%;
+  height: 100px;
+
+  box-sizing: border-box;
+}
+
+.comments {
+  margin: 30px;
+  padding: 30px;
+}
+
+.new-comments{
+  background-color: grey;
+  width:100%;
+  height:100%;
+  padding: 20px;
+}
+
+.single-comment{
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+}
+
+.comments button{
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 16px 32px 16px 32px;
+  text-decoration: none;
+  margin: 60px 0px 0px 0px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  }
+
+.blogpost{
+  padding: 60px;
+}
+
+.save-button{
+  float: right;
+}
+
+.save-button button{
+
+  display: none;
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 16px 32px 16px 32px;
+  text-decoration: none;
+  margin: 0px 60px 0px 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+
+}
