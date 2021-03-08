@@ -1,0 +1,195 @@
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background: #8e9eab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 20px 10px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Montez', cursive;
+  float: left;
+  color: blue;
+  text-decoration: none;
+}
+
+.header p.subheading {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Ubuntu Mono', monospace;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.header button {
+  background:blue;
+  float: left;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  padding: 10px;
+  color: white;
+
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Float the link section to the right */
+.header-left {
+  float: left;
+}
+
+
+/* The Modal (background) */
+.signin-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Modal Content/Box */
+.signin-modal-content {
+   background-color: #ffffff;
+   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.signin-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.signin-close:hover,
+.signin-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.signup-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+height: 60%;
+
+}
+
+/* Modal Content/Box */
+.signup-modal-content {
+  background-color: #fefefe;
+ margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+ border: 1px solid #888;
+ width: 80%; /* Could be more or less, depending on screen size */
+height: 100%;
+}
+
+/* The Close Button */
+.signup-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.signup-close:hover,
+.signup-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+form {
+  border: 3px solid #f1f1f1;
+
+}
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  border: 0px;
+}
+
+#submit{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#signup-submit{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+form h1{
+  font-family: sans-serif;
+  font-style:normal;
+  color:#A9A9A9;
+}
+
+
+label{
+
+  font-family: sans-serif;
+  font-style:normal;
+
+}
+
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+.signup-container {
+  padding: 16px;
+
+}
+
+
+span.psw{
+ padding: 31%;
+ font-family: sans-serif;
+}

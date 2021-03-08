@@ -1,13 +1,118 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
+     <link href="styles/index.css" rel="stylesheet">
+     <link href="styles/common.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
+    <!--header code--->
+    <div class="header">
+
+      <div class="header-left">
+        <a href="#home" class="logo">ScriBBler</a>
+        <p class="subheading">Explore, Imagine, Create</p>
+      </div>
+
+      <div class="header-right">
+        <button id="signIn">Sign In</button>
+        <button id="signUp">Sign Up</button>
+
+        <!-- Sign In Modal -->
+        <div id="signInModal" class="signin-modal">
+          <div class="signin-modal-content">
+            <span class="signin-close">&times;</span>
+              <form class="modal-content animate" action="/action_page.php">
+                  <div class="welcome">
+                    <h1>Welcome back !</h1>
+                    <hr/>
+                  </div>
+
+                  <div class="container">
+                    <label for="uname">Username</label>
+                    <input type="text" placeholder="Enter your Username" name="uname" required>
+
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Enter your Password" name="psw" required>
+
+                    <button id="submit" type="submit">Sign in</button>
+                    <span class="psw">Not a member? <a id="signuplink" href="#">Sign Up</a></span>
+                  </div>
+            </form>
+          </div>
+        </div>
+        <!-- Sign In Modal -->
+
+
+
+        <!-- Sign Up Modal -->
+        <div id="signUpModal" class="signup-modal">
+          <div class="signup-modal-content">
+            <span class="signup-close">&times;</span>
+                <form action="action_page.php" id="createPost">
+                    <div class="signup-container">
+                      <h1>Get Started</h1>
+                      <hr/>
+
+                      <label for="email"><b>Name</b></label>
+                      <input type="text" placeholder="Enter your name" name="firstname" required>
+
+                      <label for="email"><b>Username</b></label>
+                      <input type="text" placeholder="Enter your username" name="username" required>
+
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+
+                      <label for="psw-repeat"><b>Confirm Password</b></label>
+                      <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+                      <button type="signup-submit" id="submit">Sign Up</button>
+                    </div>
+              </form>
+          </div>
+        </div>
+        <!-- Sign Up Modal -->
+      </div>
+    </div>
+    <!--header code--->
+
+    <!--body code--->
+    <div class="centered">
+      <button class="body-buttons"><a href="posts/allposts.html">All Posts</a></button>
+      <button class="body-buttons" id="create-submit">Create Post</button>
+
+
+      <!-- Create Post Modal -->
+      <div id="createPostModal" class="create-post-modal">
+        <div class="create-post-content">
+          <span class="create-post-close">&times;</span>
+              <form action="action_page.php">
+                  <div class="create-post-container">
+                    <h1>Pen Your Post</h1>
+                    <hr/>
+
+                    <label for="title"><b>Title</b></label>
+                    <input type="text" placeholder="Enter title of your post" name="title" required>
+
+                    <label for="content" ><b>Contents</b></label>
+                    <input id="content-label" type="text" placeholder="Enter the contents of your post" name="content" required>
+
+                    <button type="create" id="submit">Create</button>
+                  </div>
+            </form>
+        </div>
+      </div>
+        <!-- Create Post Modal -->
+    </div>
+    <!--body code--->
+
+
+
 </body>
 
+<script src="scripts/common.js"></script>
+<script src="scripts/index.js"></script>
 </html>
