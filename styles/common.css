@@ -47,21 +47,29 @@
   float: left;
 }
 
-
 /* The Modal (background) */
 .signin-modal {
   display: none; /* Hidden by default */
-  position: fixed;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  top: 0;
+  bottom:0;/* Enable scroll if needed */
+  left: 0;
+  right:0;/* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
 }
 
 /* Modal Content/Box */
 .signin-modal-content {
-   background-color: #ffffff;
-   width: 80%; /* Could be more or less, depending on screen size */
+   background-color: #fefefe;
+   margin: 15% auto;
+   padding: 20px;
+   width: 30%;
+   height: 50%;
 }
 
 /* The Close Button */
@@ -83,22 +91,26 @@
 /* The Modal (background) */
 .signup-modal {
   display: none; /* Hidden by default */
-  position: fixed;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-height: 60%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  top: 0;
+  bottom:0;/* Enable scroll if needed */
+  left: 0;
+  right:0;/* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 
 }
 
 /* Modal Content/Box */
 .signup-modal-content {
   background-color: #fefefe;
- margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
- border: 1px solid #888;
- width: 80%; /* Could be more or less, depending on screen size */
-height: 100%;
+  margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 40%; /* Could be more or less, depending on screen size */
+  height: 60%;
+
 }
 
 /* The Close Button */
@@ -125,9 +137,8 @@ height: 100%;
   transform: translate(-50%, -50%);
 }
 
-form {
-  border: 3px solid #f1f1f1;
-
+form{
+   border: 0px;
 }
 
 
@@ -159,7 +170,7 @@ form {
   color: white;
   padding: 16px 32px;
   text-decoration: none;
-  margin: 4px 2px;
+  margin: 4px 2px 10px 2px;
   cursor: pointer;
   width: 100%;
 }
@@ -183,10 +194,8 @@ form h1{
 
 
 label{
-
   font-family: sans-serif;
   font-style:normal;
-
 }
 
 
@@ -201,7 +210,14 @@ label{
 }
 
 
-span.psw{
- padding: 31%;
- font-family: sans-serif;
+span.sign-up-redirect{
+  padding: 40px;
+  margin: 40px;
+  font-family: sans-serif;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
 }
